@@ -1,0 +1,25 @@
+<html>
+  <body>
+    <div id ="child-nodes">
+      <p>some text</p>
+      <p>some other text</p>
+    </div>
+
+    <div id="first-child">
+      <p>some text</p>
+      <p>some other text</p>
+    </div>
+
+    <script>
+     var a = document.getElementById("child-nodes");
+     var arr = a.childNodes;
+     for(var x=0;x<arr.length;x++) {
+       arr[x].innerHTML = "new text";
+     }
+
+     var b = document.getElementById("first-child");
+     console.log(b.firstChild);
+    </script>
+
+  </body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p class="demo">This is an ID paragraph</p>
+    <p class="demo">This is a Class paragraph</p>
+    <script>
+        let objClass = document.querySelectorAll(".demo")
+        // paragraphs[0] is the first <p> element
+// paragraphs[1] is the second <p> element, etc.
+        objClass.innerHTML= "This Class was edited by DOM";
+    </script>
+</body>
+</html>
