@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="demo">
+        <p id="p1">This is the first paragraph</p>
+        <p id="p2">This is the second paragraph</p>
+    </div>
+
+<script>
+var p = document.createElement("p");
+var node = document.createTextNode("This paragraph has been replaced by DOM");
+p.appendChild(node);
+
+var demo = document.getElementById("demo");
+var p1 = document.getElementById("p1");
+demo.replaceChild(p, p1);
+</script>
+</body>
+</html>
