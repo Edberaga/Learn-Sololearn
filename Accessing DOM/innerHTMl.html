@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inner HTML</title>
+</head>
+<body>
+    <p id="get-it">Paragraph</p>
+    <p>Another paragraph</p>
+    <p id="set-it"></p>
+    <script>
+    let getId= document.getElementById("get-it");
+    console.log(getId.innerHTML);
+
+    let setId = document.getElementById("set-it");
+    setId.innerHTML = getId.innerHTML;
+    </script>
+</body>
+</html>

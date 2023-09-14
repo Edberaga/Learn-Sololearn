@@ -1,0 +1,11 @@
+<div id="demo" style="color:red;">some text</div>
+<script>
+    function changeStyle() {
+    var x = document.getElementById("demo");
+    x.style.color = "6600FF";
+    x.style.padding = "25px";
+    x.style.backgroundColor = "yellow"
+    }
+  //calling the function with setTimeout to make sure the HTML is loaded
+  setTimeout(changeStyle, 500);
+</script>
